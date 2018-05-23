@@ -1,0 +1,145 @@
+/* Tiny reset thingy */
+body,html{margin:0;padding:0;}
+
+.navigation {
+    list-style: none;
+    margin: 0; 
+    padding: 1em;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    justify-content: space-evenly;
+    align-items: center;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    background: rgba(255,255,255,0);
+}
+
+.navigation a {
+    text-decoration: none;
+    font-family: "industry", sans-serif;
+    font-size: 1.5em;
+    display: block;
+    color: white;
+    mix-blend-mode: darken;
+}
+
+.wrapper {
+    /* The height needs to be set to a fixed value for the effect to work.
+    * 100vh is the full height of the viewport. */
+    height: 100vh;
+    /* The scaling of the images would add a horizontal scrollbar, so disable x overflow. */
+    overflow-x: hidden;
+    /* Enable scrolling on the page. */
+    overflow-y: auto;
+    /* Set the perspective to 2px. This is essentailly the simulated distance from the viewport to transformed objects.*/
+    perspective: 2px;
+}
+
+.section {
+    /* Needed for children to be absolutely positioned relative to the parent. */
+    position: relative;
+    /* The height of the container. Must be set, but it doesn't really matter what the value is. */
+    height: 100vh;
+}
+
+.parallax::after {
+    /* Display and position the pseudo-element */
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    /* Move the pseudo-element back away from the camera,
+    * then scale it back up to fill the viewport.
+    * Because the pseudo-element is further away, it appears to move more slowly, like in real life. */
+    transform: translateZ(-1px) scale(1.5);
+    /* Force the background image to fill the whole element. */
+    background-size: cover;
+    /* Keep the image from overlapping sibling elements. */ 
+    z-index: -1;
+}
+
+#downarrow {
+    position: relative;
+    top: -10%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+}
+
+/* The styling for the static div. */
+.static {
+    position: relative;
+    /* top: -10%; */
+    background: white;
+}
+
+/* Sets the actual background images to adorable kitties. This part is crucial. */
+.bg1::after {
+    background-image: url('images/Team.png');
+    background-repeat: no-repeat;
+}
+
+.bg2::after {
+    /* background-image: url('https://source.unsplash.com/random/1920x1080'); */
+    background-image: url("images/McNeese2.jpg");
+    background-repeat: no-repeat;
+}
+
+#about {
+    position: absolute;
+    margin: 35px;
+    width: 60%;
+}
+
+#about > h1 {
+
+    position: relative;
+    margin: 10px;
+    font-family: "industry", sans-serif;
+    font-size: 4em;
+
+}
+
+#about > p {
+
+    position: relative;
+    font-family: "industry", sans-serif;
+    font-size: 2em;
+    margin: 10px;
+
+}
+
+@media all and (max-width: 800px) {
+    .navigation {
+        justify-content: space-around;
+    }
+}
+
+@media all and (max-width: 600px) {
+    .navigation {
+        -webkit-flex-flow: column wrap;
+        flex-flow: column wrap;
+        padding: 0;
+    }
+
+    .navigation a { 
+        text-align: center; 
+        padding: 10px;
+        border-top: 1px solid rgba(255,255,255,0.3); 
+        border-bottom: 1px solid rgba(0,0,0,0.1); 
+    }
+
+    .navigation li:last-of-type a {
+        border-bottom: none;
+    }
+}

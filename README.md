@@ -1,1 +1,1 @@
-# lsumenssoccer.github.io
+# LSUMensSoccer
