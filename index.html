@@ -1,36 +1,64 @@
 <head>
     <title>LSU Men's Club Soccer</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://use.typekit.net/kga5ero.css">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="query.js"></script>
 </head>
 <body>
+
     <nav>
         <ul class="navigation">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="index.html" style="padding: 0;"><img src="images/ClubCrest.png" style="height: 100px;"></a></li>
-            <li><a href="#">Schedule</a></li>
-            <li><a href="#">Support</a></li>
+            <li class="nav-text"><a href="#">About</a></li>
+            <li class="nav-text"><a href="#">Team</a></li>
+            <li><a href="index.html"><img src="images/ClubCrest.png" style="height: 100px;"></a></li>
+            <li class="nav-text"><a href="#">Schedule</a></li>
+            <li class="nav-text"><a href="#">Support</a></li>
         </ul>
     </nav>
 
-    <main class="wrapper">
+    <main class="main-wrapper">
 
-        <section class="section parallax bg1"></section>
+        <section>
+            <div class="splash opener"></div>
+        </section>
 
-        <div id="downarrow">▽</div>
-
-        <section class="section static">
-            <div id="about">
-                <h1>ABOUT</h1>
-                <p>
-                    Lorem ipsum dolor sit amet, ad vix graece hendrerit. Oratio audire quo ad, vix liber adversarium no. At qui insolens expetenda disputando, nec ex atqui impetus sensibus. Omittantur disputationi eos ei, vel sonet nonumes dissentiet te. Sed ad luptatum salutatus voluptaria.
-                </p>
+        <section>
+            <div class="midsection 1">
+                <div id="about">
+                    <h1>ABOUT</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper massa quis mauris porttitor, sed accumsan nisl luctus. Aliquam vulputate sem a imperdiet varius. Nulla porta ante eget ligula aliquam porttitor. Mauris tempor sodales mi eu aliquam. Duis fringilla commodo odio vitae molestie. Sed convallis metus ac lectus condimentum faucibus. Sed bibendum, leo quis hendrerit lobortis, ex est convallis libero, et tincidunt dui felis et augue. Fusce vehicula nisl vitae porta semper. Aenean vel sem vitae nisi aliquet accumsan. In pharetra mauris sit amet purus pulvinar sollicitudin ac aliquam neque. Sed pretium lectus aliquet dignissim dapibus. Donec vitae mauris lorem. Suspendisse vel laoreet purus, vel sodales leo.
+                    </p>
+                </div>
+                <div id="punchout">
+                    <p class="punchout-text">Lorem</p>
+                    <p class="punchout-text">Lorem Ipsum</p>
+                    <p class="punchout-text">Lorem Ipsum Dolor</p>
+                    <p class="punchout-text">Lorem Ipsum Dolor Sit</p>
+                </div>
             </div>
         </section>
 
-        <section class="section parallax bg2"></section>
+        <section>
+            <div class="splash" id="schedule">
+                <h1>SCHEDULE</h1>
+            </div>
+        </section>
+
+        <section>
+            <div class="midsection 2">
+                <div id="schedule-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ullamcorper massa quis mauris porttitor, sed accumsan nisl luctus. Aliquam vulputate sem a imperdiet varius. Nulla porta ante eget ligula aliquam porttitor.
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="splash ender"></div>
+        </section>
+
+
     </main>
 
-    <script src="script.js"></script>
 </body>
