@@ -28,7 +28,7 @@ header {
     width: 100%;
     height: 75px;
     background-color: white;
-    border-bottom: 1px solid #2C9AB7;
+    border-bottom: 1px solid #461D7C;
 }
 
 .logo {
@@ -72,7 +72,7 @@ ul li a {
 }
 
 ul li:hover a {
-    color: #2C9AB7;
+    color: #461D7C;
 }
 
 /* Hero Section */
@@ -99,8 +99,8 @@ ul li:hover a {
     font-size: 8vh;
     font-weight: 500;
     font-style: italic;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(175, 175, 255);
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
 }
 
 .light {
@@ -121,7 +121,7 @@ ul li:hover a {
     letter-spacing: 1px;
     font-style: italic;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: rgb(175, 175, 255);
+    -webkit-text-stroke-color: white;
 }
 
 /* About Section */
@@ -294,14 +294,15 @@ footer .footer_column p {
 
 .copyright {
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     background-color: #717070;
     color: #FFFFFF;
     text-transform: uppercase;
     font-weight: lighter;
     letter-spacing: 2px;
     border-top-width: 2px;
+    font-family: "Source Sans Pro", sans-serif;
 }
 
 .footer_banner {
@@ -392,7 +393,7 @@ footer {
         text-align: center;
     }
     .banner {
-        background-color: #2D9AB7;
+        background-color: #461D7C;
         background-image: none;
     }
     .tagline {
@@ -428,7 +429,7 @@ footer {
         float: none;
         overflow: auto;
         display: inline-block;
-        background: #52bad5;
+        background: #461D7C;
     }
     header nav ul {
         padding: 0px;
