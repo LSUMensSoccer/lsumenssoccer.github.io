@@ -26,9 +26,10 @@ body {
 
 header {
     width: 100%;
-    height: 75px;
-    background-color: white;
-    border-bottom: 1px solid #461D7C;
+    height: 100px;
+    /* height: 75px; */
+    /* background-color: white; */
+    background-color: black;
 }
 
 .logo {
@@ -37,42 +38,44 @@ header {
     text-align: undefined;
     height: 50px;
     float: left;
-    margin-top: 15px;
+    margin-top: 25px;
     margin-left: 25px;
 }
 
 nav {
     float: right;
-    width: 50%;
+    width: calc(100% - 400px);
     text-align: right;
-    margin-right: 25px;
+    border-bottom: 1px solid #461D7C;
+
+    /* margin-right: 25px; */
 }
 
 header nav ul {
     list-style: none;
     float: right;
+    padding-left: 0;
+    margin-top: 25px;
 }
 
 nav ul li {
     float: left;
-    color: black;
     font-size: 1em;
     text-align: left;
     margin-right: 25px;
-    margin-top: 5px;
     /* letter-spacing: 2px; */
     font-weight: bold;
     transition: all 0.3s linear;
 }
 
 ul li a {
-    color: black;
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
 }
 
 ul li:hover a {
-    color: #461D7C;
+    color: gold;
 }
 
 /* Hero Section */
@@ -325,6 +328,7 @@ footer {
 /* Mobile */
 
 @media (max-width: 320px) {
+
     .logo {
         width: 100%;
         text-align: center;
@@ -342,7 +346,11 @@ footer {
         float: none;
         display: none;
     }
-    header nav ul {}
+   
+    header {
+        height: 75px;
+    }
+
     nav ul li {
         margin-top: 0px;
         margin-right: 0px;
@@ -398,13 +406,17 @@ footer {
     }
     .tagline {
         margin-top: 20px;
-        line-height: 22px;
     }
+
+    .hero {
+        padding-top: 20px;
+    }
+
     .hero_header {
         padding-left: 10px;
         padding-right: 10px;
-        line-height: 22px;
         text-align: center;
+
     }
 }
 
@@ -414,11 +426,12 @@ footer {
     .logo {
         width: 100%;
         text-align: center;
-        margin-top: 13px;
-        margin-right: 0px;
-        margin-bottom: 0px;
-        margin-left: 0px;
-        color: #043745;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-top: 0;
+        margin-left: auto;
+        background-color: rgba(100, 100, 100, 0.25);
+        /* background-color: white; */
     }
     .container header nav {
         margin-top: 0px;
@@ -426,15 +439,20 @@ footer {
         margin-bottom: 0px;
         margin-left: 0px;
         width: 100%;
-        float: none;
         overflow: auto;
         display: inline-block;
-        background: #461D7C;
+        background: rgba(100, 100, 100, 0.25);
     }
     header nav ul {
         padding: 0px;
+        margin: 0;
         float: none;
     }
+
+    nav {
+        border: none;
+    }
+
     nav ul li {
         margin-top: 0px;
         margin-right: 0px;
@@ -445,6 +463,20 @@ footer {
         padding-top: 8px;
         padding-bottom: 8px;
     }
+
+    .hero {
+        height: 320px;
+        padding: 0;
+    }
+
+    .hero h2 {
+        display: none;
+    }
+
+    .hero p {
+        display: none;
+    }
+
     .text_column {
         width: 100%;
         text-align: left;
