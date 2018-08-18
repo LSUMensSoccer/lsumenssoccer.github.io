@@ -56,14 +56,16 @@ header nav ul {
     list-style: none;
     float: right;
     padding-left: 0;
-    margin-top: 25px;
+    margin-top: 20px;
+    margin-bottom: 12.5px;
 }
 
 nav ul li {
     float: left;
     font-size: 1em;
     text-align: left;
-    margin-right: 25px;
+    margin-right: 10px;
+    padding: 7.5px 15px 5px 15px;
     /* letter-spacing: 2px; */
     font-weight: bold;
     transition: all 0.3s linear;
@@ -78,6 +80,20 @@ ul li a {
 ul li:hover a {
     color: purple;
 }
+
+.support {
+    background-color: gold;
+    padding-top: 5;
+}
+
+.support a {
+    color: black;
+}
+
+.support:hover a {
+    color: white;
+}
+
 
 
 /* header {
@@ -178,8 +194,15 @@ ul li:hover a {
 }
 
 .row .columns p {
+    font-family: "Dosis", sans-serif;
     padding-left: 10%;
     padding-right: 10%;
+    color: #717070;
+}
+
+.row .columns p i {
+    font-weight: 900;
+    color: #343434;
 }
 
 .container .columns h4 {
@@ -187,10 +210,20 @@ ul li:hover a {
     color: #461D7C;
     letter-spacing: 2px;
     font-weight: 500;
+    margin-bottom: 0;
 }
 .container .columns h4 span {
     letter-spacing: 2px;
     font-weight: 700;
+}
+
+.container .columns h6 {
+    text-align: center;
+    font-weight: lighter;
+    color: grey;
+    letter-spacing: 3px;
+    margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .primary_header {
@@ -271,10 +304,12 @@ ul li:hover a {
     padding-left: 5%;
     padding-right: 5%;
     text-align: justify;
-    line-height: 24px;
+    /* line-height: 24px; */
     /* margin-top: 30px; */
     margin-bottom: 15px;
     color: #B3B3B3;
+    font-size: 1.25em;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .right_article {
